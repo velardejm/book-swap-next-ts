@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button, buttonVariants } from '@/components/atoms/Button';
-import { LoginModal } from '@/components/organisms/LogInModal';
+import { LoginModal } from '@/components/molecules/LogInModal';
 
 const Navbar = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState<boolean>(false);

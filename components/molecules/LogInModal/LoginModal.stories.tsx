@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { LoginModal } from '@/components/organisms/LogInModal';
+import { LoginModal } from '@/components/molecules/LogInModal';
 
 const meta = {
   title: 'Organisms/LoginModal',
