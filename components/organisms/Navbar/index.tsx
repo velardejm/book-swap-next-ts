@@ -1,15 +1,23 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button, buttonVariants } from '@/components/atoms/Button';
-import { LoginModal } from '@/components/molecules/LogInModal';
+import { LoginModal } from '@/components/molecules/LoginModal';
+import { SignUpModal } from '@/components/molecules/SignUpModal';
 
 const Navbar = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState<boolean>(false);
+  const [isSignUpModalOpen, setIsSignUpModalOpen] = useState<boolean>(false);
   const openLoginModal = () => {
     setIsLoginModalOpen(true);
   };
   const closeLoginModal = () => {
     setIsLoginModalOpen(false);
+  };
+  const openSignupModal = () => {
+    setIsSignUpModalOpen(true);
+  };
+  const closeSignupModal = () => {
+    setIsSignUpModalOpen(false);
   };
   return (
     <>
@@ -23,10 +31,11 @@ const Navbar = () => {
           <Button className="mr-4 bg-blue-500" onClick={openLoginModal}>
             Log In
           </Button>
-          <Button>Sign Up</Button>
+          <Button onClick={openSignupModal}>Sign Up</Button>
         </div>
       </nav>
       {isLoginModalOpen && <LoginModal closeModal={closeLoginModal} />}
+      {isSignUpModalOpen && <SignUpModal closeModal={closeSignupModal} />}
     </>
   );
 };

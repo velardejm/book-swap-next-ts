@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { LoginModal } from '@/components/molecules/LoginModal';
+import { SignUpModal } from '@/components/molecules/SignUpModal';
 
 const meta = {
-  title: 'Organisms/LoginModal',
-  component: LoginModal,
-} satisfies Meta<typeof LoginModal>;
+  title: 'Organisms/SignUpModal',
+  component: SignUpModal,
+} satisfies Meta<typeof SignUpModal>;
 export default meta;
 
 type Story = StoryObj<typeof meta>;
