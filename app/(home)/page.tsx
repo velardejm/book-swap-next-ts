@@ -1,18 +1,15 @@
 'use client';
 
-import { useState } from 'react';
 import { Navbar } from '@/components/organisms/Navbar';
-import { LoginModal } from '@/components/molecules/LogInModal';
+import { Hero } from '@/components/organisms/Hero';
 
 export default function Home() {
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
-  const toggleLoginModal = (): void => {
-    setIsLoginModalOpen(!isLoginModalOpen);
-  };
+  
   return (
     <>
-      <main>
+      <main className='flex flex-col min-h-screen'>
         <Navbar />
+        <Hero />
       </main>
     </>
   );

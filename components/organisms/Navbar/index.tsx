@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button, buttonVariants } from '@/components/atoms/Button';
-import { LoginModal } from '@/components/molecules/LoginModal';
+import { LoginModal } from '@/components/molecules/LogInModal';
 import { SignUpModal } from '@/components/molecules/SignUpModal';
 
 const Navbar = () => {
