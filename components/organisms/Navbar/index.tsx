@@ -6,9 +6,9 @@ import { SignUpModal } from '@/components/molecules/SignUpModal';
 import { TestModal } from '@/components/molecules/TestModal';
 
 const Navbar = () => {
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState<boolean>(false);
-  const [isSignUpModalOpen, setIsSignUpModalOpen] = useState<boolean>(false);
-  const [isTestModalOpen, setIsTestModalOpen] = useState<boolean>(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [isSignUpModalOpen, setIsSignUpModalOpen] = useState(false);
+  const [isTestModalOpen, setIsTestModalOpen] = useState(false);
 
   const toggleLoginModal = () => {
     setIsLoginModalOpen(!isLoginModalOpen);
